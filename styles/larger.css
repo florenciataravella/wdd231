@@ -1,0 +1,74 @@
+@media only screen and (min-width:38rem){
+    .hamburger{
+        display: none;
+    }
+    header{
+        grid-template-columns: 40px auto;
+    }
+    header, main, nav, footer{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .navigation{
+        display: block;
+        background-color: var(--normal-color);
+        border: solid 1px var(--active-color);
+    }
+    .navigation ul{
+        display: flex;
+    }
+    .navigation a{
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 12px;
+}    
+/******************CARD ABOUT*********************/
+    .card.about{
+    grid-template-columns: 1/2;
+     column-gap: 8px;
+    
+}
+    .card.about h2{
+    text-align: center;
+}
+    .card.about p{
+    justify-self: center;
+}
+
+    #catamarca{
+    width: 350px;
+    height: auto;
+    justify-self: center;
+    
+}
+/******************CARD SCRIPTURE****************/
+.card.scripture{
+  
+    column-gap: 8px;
+}
+.card.scripture h2{
+   
+    text-align: center;
+}
+.card.scripture p{
+
+    justify-self: center;
+    
+}
+#buni{
+    width: 250px;
+    height: auto;
+  
+    align-self: center;
+}
+/******************CARD COURSES****************/
+#courses{
+    display: grid;
+
+}
+}

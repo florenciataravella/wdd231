@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Florencia Taravella">
+    <meta name="description" content="WDD231-Course Home Page">
+    <title>Course Home Page</title>
+    <!----------- FONT LINKS----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!----------- CSS LINKS----------->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!----------- SCRIPT LINK----------->
+    <script src="/scripts/navigation.js" defer></script>
+    <script src="/scripts/courses.js" defer></script>
 </head>
 <body>
+    <header>
+        <img src="images/logo.svg" alt="Bunibliss logo" height="1350" width="1080">
+        <span> Florencia Taravella</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"> <a href="#"> Home</a></li>
+            <li> <a href="#"> Chamber Project</a></li>
+            <li> <a href="#"> Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1> Home</h1>
+        <div class="content"></div>
+            
+            <section class="card about">    
+            <h2> About me</h2>
+            <p> My name is Florencia from Argentina. I am studying Software Development because I love to learn and would like to invest in my cosmetic boutique laboratory <a href="https://bunibliss.mitiendanube.com/"></a>. I'm married to Marcos and have 3 beautiful children. I love to teach them about the Gospel.
+             This is the city of Catamarca, where we live. It is medium city in a northern province of the country. It has beautiful mountain sights and people are really nice and welcoming. We have a pleasant and tranquil life here. </p>
+             <img id="catamarca" src="images/foto-catamarca.jpg" alt="Sight of Catamarca" width="450" height="337" loading="lazy">
+            </section>
+
+            <section class="card scripture">
+            <h2> Favorite scripture</h2>
+            <p > 7 Blessed is the man that trusteth in the Lord, and whose hope the Lord is.
+            8 For he shall be as a tree planted by the waters, and that spreadeth out her roots by the river, and shall not see when heat cometh, but her leaf shall be green; and shall not be careful in the year of drought, neither shall cease from yielding fruit.<a href="https://www.churchofjesuschrist.org/study/scriptures/ot/jer/7?lang=eng"></a></p>  
+            <img id="buni" src="images/foto.jpg" alt="Picture of me" width="1250" height="770" loading="lazy">  
+            </section>
+        </div>
+        <div id="courses">
+            <h2> Web Certificate Courses</h2>
+            <span id="allCourses">All Courses</span>
+            <span id="WDDcourses">WDD Courses</span>
+            <span id="CSEcourses">CSS Courses</span>
+        </div>
+    </main>
     
+    <footer>
+        <div class="social">
+            <a href="" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16" loading="lazy"></a>
+            <a href="" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16" loading="lazy"></a>
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16" loading="lazy"></a>
+            <a href="" target="_blank"><img src="images/youtube.svg" alt="YouTube" width="16" height="16" loading="lazy"></a>
+        </div>
+        <p>⭐⭐⭐|© Florencia Taravella- Argentina <span id="year"></span>|⭐⭐⭐ </p>
+        <p> Last modification: </p> <span id="lastmodified"></span></p>
+    </footer>
 </body>
 </html>
