@@ -1,0 +1,33 @@
+{
+    "familyName":"Aibar",
+    "date":"October 22 2021",
+    "familyMembers":5,
+    "visited":true,
+    "indFamMemberData":[
+        {
+            "name":"Marcos",
+            "gender":"M",
+            "birthdate":"January 31 1986"
+        },
+        {
+            "name":"Florencia",
+            "gender":"F",
+            "birthdate": "August 12 1987"
+        },
+        {
+            "name":"Catalina",
+            "gender":"F",
+            "birthdate": "November 15 2017"
+        },
+        {
+            "name":"Agustin",
+            "gender":"M",
+            "birthdate": "November 12 2021"
+        },
+        {
+            "name":"Delfina",
+            "gender":"F",
+            "birthdate":"June 3 2024"
+        }
+    ]
+}

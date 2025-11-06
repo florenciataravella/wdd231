@@ -195,6 +195,7 @@ main{
 .coursesCard.hidden{
     display: none;
 }
+
 .CSEcoursesCard,
 .WDDcoursesCard,
 .coursesCard{
@@ -204,9 +205,15 @@ main{
     border: var(--font-color) solid 1px;
     background-color: var(--normal-color);
     column-gap: 2px;
-    
 }
-
+.coursesCard.completed{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: var(--font-color) solid 1px;
+    background-color: red;
+    column-gap: 2px;
+}
 /******************FOOTER************************/
 footer{
     background-color: var(--active-color);

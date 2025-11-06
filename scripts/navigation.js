@@ -4,6 +4,7 @@ navbutton.addEventListener("click",()=>{
     navbutton.classList.toggle("show");
     navlinks.classList.toggle("show");
 })
+document.addEventListener("DOMContentLoaded",()=>{
 
 const yearjs=document.querySelector("#year");
 
@@ -20,4 +21,4 @@ const formattedDate = new Intl.DateTimeFormat("en-US", {
 }).format(lastModified);
 
 lastmodifiedjs.textContent = formattedDate;
-
+});

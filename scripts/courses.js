@@ -91,14 +91,33 @@ courses.forEach(course=>{
     card.appendChild(courseSubject);
     card.appendChild(courseNumber);
     
-
+    
     card.classList.add("coursesCard", "hidden"); 
-    /*card.setAttribute("class","coursesCard");*/
+    if(course.completed==true){
+        card.classList.add("completed");
+    };
     document.querySelector("#courses").appendChild(card);
     
 })
 
 }
+/*function completedCourse(courses){
+    const completedCourses=courses.filter(course=>course.completed==true);
+    completedCourses.forEach(course=>{
+        let card=document.createElement("section");
+        let courseSubject=document.createElement("p");
+        let courseNumber=document.createElement("p");
+
+        courseSubject.textContent=course.subject;
+        courseNumber.textContent=course.number;
+  
+
+    card.appendChild(courseSubject);
+    card.appendChild(courseNumber);
+    card.classList.add("completedCourse","hidden");
+    document.querySelector("#courses").appendChild(card);
+    })
+}*/
 function createWDDCoursesCard(courses){
     const WDDcourses=courses.filter(course=>course.subject=="WDD");
     WDDcourses.forEach(course=>{
@@ -115,8 +134,7 @@ function createWDDCoursesCard(courses){
     card.appendChild(courseNumber);
   
 
-    card.classList.add("hidden");
-    card.setAttribute("class","WDDcoursesCard");
+    card.classList.add("WDDcoursesCard","hidden");
     document.querySelector("#courses").appendChild(card);
     
 })
@@ -137,13 +155,12 @@ function createCSECoursesCard(courses){
     card.appendChild(courseNumber);
 
 
-    card.classList.add("hidden");
-    card.setAttribute("class","CSEcoursesCard");
+    card.classList.add("CSEcoursesCard","hidden");
     document.querySelector("#courses").appendChild(card);
 
     })
 }
-window.addEventListener("load", () => {
+/*window.addEventListener("load", () => {
   document.querySelectorAll(".coursesCard").forEach(card =>
     card.classList.add("hidden")
   );
@@ -157,7 +174,8 @@ window.addEventListener("load", () => {
   document.querySelectorAll(".CSEcoursesCard").forEach(card =>
     card.classList.add("hidden")
   );
-});
+});*/
+
 createCoursesCard(courses);
 
 createWDDCoursesCard(courses);
@@ -175,20 +193,28 @@ const WDDcoursesbtn=document.querySelector("#WDDcourses");
 const CSEcoursesCardjs=document.querySelectorAll(".CSEcoursesCard");
 const CSEcoursesbtn=document.querySelector("#CSEcourses");
 
+const completedCoursejs=document.querySelectorAll(".completedCourse");
+
 
 allCoursesbtn.addEventListener("click", ()=>{
-    coursesCardjs.forEach(card=>{
-        card.classList.toggle("hidden");
-    })
-})
+    WDDcoursesCardjs.forEach(card=>(
+        card.classList.add("hidden")));
+        coursesCardjs.forEach(card=>(
+            card.classList.toggle("hidden")));
+    });
 WDDcoursesbtn.addEventListener("click", ()=>{
-    WDDcoursesCardjs.forEach(card=>{
-        card.classList.toggle("hidden");
-    })
-})
-CSEcoursesbtn.addEventListener("click",()=>{
-    CSEcoursesCardjs.forEach(card=>{
-        card.classList.toggle("hidden");
-    })
-})
+    coursesCardjs.forEach(card=>(
+        card.classList.add("hidden")));
+        WDDcoursesCardjs.forEach(card=>(
+            card.classList.toggle("hidden")));
+        
+    });
+CSEcoursesbtn.addEventListener("click", ()=>{
+    WDDcoursesCardjs.forEach(card=>(
+        card.classList.add("hidden")));
+        CSEcoursesCardjs.forEach(card=>(
+            card.classList.toggle("hidden")));
+        
+    });
+
 
