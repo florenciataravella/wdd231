@@ -1,16 +1,47 @@
-const url="https://florenciataravella.github.io/wdd231/memberinfo.json";
-
+const url="https://florenciataravella.github.io/wdd231/chamber/members.json";
+const businessMembers=document.querySelector(".business-members");
 async  function getMembersInfo(){
     try{
         const response=await fetch(url);
-        const data=await response.json;
+        const data=await response.json();
         return data.companies;
     }
     catch(error){
         console.error("Error:",error);
     }
 }
+
+function displayMembers(members){
+    members.forEach(member=> {
+        let card=document.createElement("section");
+        let name=document.createElement("p");
+        let address=document.createElement("p");
+        let phone=document.createElement("p");
+        let weburl=document.createElement("p");
+        let portrait=document.createElement("img");
+
+        name.textContent=member.name;
+        address.textContent=member.address;
+        phone.textContent=member.phone;
+        weburl.textContent=member.weburl;
+        portrait.setAttribute("src",member.image);
+        portrait.setAttribute("alt",`Logo of ${member.name}`);
+        portrait.setAttribute("loading", "lazy");
+        portrait.setAttribute("width","150");
+        portrait.setAttribute("height","150");
+
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(weburl);
+        card.appendChild(portrait);
+
+        businessMembers.appendChild(card);
+        
+    });
+}
 async function init(){
     const members=await getMembersInfo();
-    
+    displayMembers(members);
 }
+init();
