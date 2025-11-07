@@ -5,8 +5,7 @@
     --heading-font2: "Inter", sans-serif; 
     --font-color: #2a5711;
     --active-color:white;
-    --normal-color:;
-    --header-color:#F4C2C2;
+    --wayfinding-color:#f2f5f5;
 
 }
 /********************HEADER*************************/
@@ -20,16 +19,16 @@ header{
 }
 header img{
     display: block;
-    width: 100%;
+    width: 150px;
     height: auto;
-    padding-left: 10px;
 }
 header span{
     font-family: var(--heading--font2);
     color: var(--font-color);
-    font-size: 1rem;
+    font-size: 3rem;
     font-weight: 900;
-    padding-left: 10px;
+    padding-left: 80px;
+    align-self: center;
 }
 /**************HAMBURGER NAVIGATION*************************/
 .hamburger{
