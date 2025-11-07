@@ -71,11 +71,12 @@ header span{
     background-color: var(--normal-color);
     border: solid 1px var(--active-color);
 }
-.navigation li.current{
+.navigation li.current a{
     background-color: azure;
+    color: #a1255f;
 }
 .navigation a:hover{
-    background-color: var(--active-color);
+    background-color: var(--normal-color);
 }
 /******************CARD ABOUT*********************/
 main{
