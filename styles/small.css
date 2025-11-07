@@ -71,6 +71,9 @@ header span{
     background-color: var(--normal-color);
     border: solid 1px var(--active-color);
 }
+.navigation li.current{
+    background-color: azure;
+}
 .navigation a:hover{
     background-color: var(--active-color);
 }
