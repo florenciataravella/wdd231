@@ -93,9 +93,7 @@ courses.forEach(course=>{
     
     
     card.classList.add("coursesCard", "hidden"); 
-    if(course.completed==true){
-        card.classList.add("completed");
-    };
+    if (course.completed) card.classList.add("completed");
     document.querySelector("#courses").appendChild(card);
     
 })
@@ -114,7 +112,10 @@ courses.forEach(course=>{
 
     card.appendChild(courseSubject);
     card.appendChild(courseNumber);
-    card.classList.add("completedCourse","hidden");
+    card.classList.add("completedCourse","coursesCard");
+    if(course.completed == true) {
+        card.classList.add("completed");
+        };
     document.querySelector("#courses").appendChild(card);
     })
 }*/
@@ -160,28 +161,11 @@ function createCSECoursesCard(courses){
 
     })
 }
-/*window.addEventListener("load", () => {
-  document.querySelectorAll(".coursesCard").forEach(card =>
-    card.classList.add("hidden")
-  );
-});
-window.addEventListener("load", () => {
-  document.querySelectorAll(".WDDcoursesCard").forEach(card =>
-    card.classList.add("hidden")
-  );
-});
-window.addEventListener("load", () => {
-  document.querySelectorAll(".CSEcoursesCard").forEach(card =>
-    card.classList.add("hidden")
-  );
-});*/
-
 createCoursesCard(courses);
 
 createWDDCoursesCard(courses);
 
 createCSECoursesCard(courses);
-
 
 
 const coursesCardjs=document.querySelectorAll(".coursesCard");
@@ -193,12 +177,10 @@ const WDDcoursesbtn=document.querySelector("#WDDcourses");
 const CSEcoursesCardjs=document.querySelectorAll(".CSEcoursesCard");
 const CSEcoursesbtn=document.querySelector("#CSEcourses");
 
-const completedCoursejs=document.querySelectorAll(".completedCourse");
+const completedCoursejs=document.querySelectorAll(".completed");
 
 
 allCoursesbtn.addEventListener("click", ()=>{
-    WDDcoursesCardjs.forEach(card=>(
-        card.classList.add("hidden")));
         coursesCardjs.forEach(card=>(
             card.classList.toggle("hidden")));
     });
@@ -210,11 +192,10 @@ WDDcoursesbtn.addEventListener("click", ()=>{
         
     });
 CSEcoursesbtn.addEventListener("click", ()=>{
-    WDDcoursesCardjs.forEach(card=>(
+    coursesCardjs.forEach(card=>(
         card.classList.add("hidden")));
         CSEcoursesCardjs.forEach(card=>(
             card.classList.toggle("hidden")));
         
     });
-
 

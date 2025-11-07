@@ -206,14 +206,16 @@ main{
     background-color: var(--normal-color);
     column-gap: 2px;
 }
-.coursesCard.completed{
+
+
+/*.coursesCard.completed{
     display: flex;
     justify-content: center;
     border-radius: 5px;
     border: var(--font-color) solid 1px;
     background-color: red;
     column-gap: 2px;
-}
+}*/
 /******************FOOTER************************/
 footer{
     background-color: var(--active-color);
