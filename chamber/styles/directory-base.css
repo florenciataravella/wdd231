@@ -72,3 +72,8 @@ header span{
 .navigation a:hover{
     background-color: var(--active-color);
 }
+/**************CARDS*************************/
+.business-members{
+    display: flex;
+    max-width: 900px;
+}
