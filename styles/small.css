@@ -76,7 +76,7 @@ header span{
     color: #a1255f;
 }
 .navigation a:hover{
-    background-color: var(--normal-color);
+    background-color:var(--header-color);
 }
 /******************CARD ABOUT*********************/
 main{
