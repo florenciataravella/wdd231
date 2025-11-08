@@ -254,7 +254,8 @@ footer p{
 .list .cards{
     grid-template-columns: 1fr 1fr;
 }
-.list .cards:nth-child(3){
+.list .cards p:nth-child(3){
     display: none;
 }
+
 }
