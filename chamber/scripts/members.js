@@ -23,7 +23,7 @@ const formattedDate = new Intl.DateTimeFormat("en-US", {
 lastmodifiedjs.textContent = formattedDate;
 });
 
-const url="https://florenciataravella.github.io/wdd231/chamber/members.json";
+const url="https://florenciataravella.github.io/wdd231/chamber/data/members.json";
 const businessMembers=document.querySelector(".business-members");
 async  function getMembersInfo(){
     try{
