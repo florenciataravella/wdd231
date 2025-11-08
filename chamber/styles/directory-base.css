@@ -8,6 +8,11 @@
     --wayfinding-color:#f2f5f5;
 
 }
+main{
+     max-width: 900px;
+     margin:0;  /*it centers the content*/
+
+}
 /********************HEADER*************************/
 header{
     display: grid;
@@ -72,8 +77,128 @@ header span{
 .navigation a:hover{
     background-color: var(--active-color);
 }
+/**************BUTTONS*************************/
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+    background-color: #2a5711;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+button {
+		padding: 0.5rem 1rem;
+		font-weight: 700;
+        background-color: #2a5711;
+        color: #f2f5f5;
+        font-family: var(--text-font);
+        border:1px solid white;  
+	}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+
+	section {
+		text-align: center;
+		& > * {
+			margin: 0.1rem;
+		}
+	}
+
+	img {
+		border: 1px solid #fff;
+		box-shadow: 0 0 1rem #555;
+	}
+}
+.list{
+	display: flex;
+	flex-direction: column;
+
+	section {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		margin: 0;
+		padding: 0.25rem;
+
+		& > * {
+			margin: 0 1rem;
+		}
+
+		img {
+			display: none;
+		}
+    }
+}
 /**************CARDS*************************/
 .business-members{
-    display: flex;
-    max-width: 900px;
+    display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 10px;  
+    
+}
+.cards{
+    max-width: 100%;            /*rule to make the content not overflow*/
+    box-sizing: border-box;     /*the container*/
+    border: 1px solid rgba(0, 0, 0, 0.1);       /* light gray line */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08); /* soft shadow bottom & right */
+  border-radius: 8px;                         /* optional: soft corners */
+  background-color: #fff;                     /* clean base for content */
+  padding: 1.2rem;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 50px 40px 20px 40px;
+
+}
+p{
+    font-family: var(--text-font);
+    font-weight:200;
+    font-size: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 100%;            /*rule to make the content not overflow*/
+    box-sizing: border-box;
+}
+p.name{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    
+    
+}
+.cards img{
+    width: 90px;
+    height: auto;
+}
+
+.portrait{
+    width: 120px;
+    height: auto;
+    box-sizing: border-box; 
+    justify-self: center;
+    grid-row: 1;
+    border: 1px solid #fff;
+}
+
+.web{
+    max-width: 100%;            /*rule to make the content not overflow*/
+    box-sizing: border-box; 
+    font-size: 0.6rem;
+    text-decoration:underline;
+    color: #3a5178;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.web:visited{
+    color: #3a5178;
+}
+.web:hover{
+    color: var(--font-color);
+    cursor: pointer;
 }

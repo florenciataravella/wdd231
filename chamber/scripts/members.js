@@ -31,11 +31,16 @@ function displayMembers(members){
         portrait.setAttribute("height","150");
 
         card.appendChild(name);
+        name.classList.add("name");
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(weburl);
+        weburl.classList.add("web");
         card.appendChild(portrait);
+        portrait.classList.add("portrait");
 
+
+        card.classList.add("cards");
         businessMembers.appendChild(card);
         
     });
@@ -45,3 +50,12 @@ async function init(){
     displayMembers(members);
 }
 init();
+const gridBtn=document.querySelector("#grid");
+const listBtn=document.querySelector("#list");
+const display=document.querySelector(".business-members");
+
+gridBtn.addEventListener("click", ()=>{
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
