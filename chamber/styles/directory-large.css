@@ -9,6 +9,10 @@
         max-width: 900px;
         margin: 0 auto;
     }
+    header span{
+        font-size: 3rem;
+        display: flex;
+    }
     .navigation{
         display: block;
         background-color: var(--normal-color);
@@ -22,8 +26,5 @@
         width: 100%;
         border: none;
     }
-    .content{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 12px;
-}  }
+   
+}  
