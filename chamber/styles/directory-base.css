@@ -250,3 +250,8 @@ footer p{
     color: white;
     font-weight: 200;
 }
+@media (max-width: 600px) {
+.list.business-members{
+    grid-template-columns: 1fr 1fr;
+}
+}
