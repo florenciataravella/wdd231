@@ -15,8 +15,6 @@
     }
     .navigation{
         display: block;
-        background-color: var(--normal-color);
-        border: solid 1px var(--active-color);
     }
     .navigation ul{
         display: flex;

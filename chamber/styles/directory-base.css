@@ -9,10 +9,13 @@
     --wayfinding-color:#f2f5f5;
 
 }
+body{
+    margin-left: 1rem;
+    box-sizing: border-box;
+}
 main{
      max-width: 900px;
-     margin:0;  /*it centers the content*/
-
+     margin: 0;
 }
 /********************HEADER*************************/
 header{
@@ -67,6 +70,7 @@ header span{
  
 }
 .navigation a{
+    box-sizing: border-box;
     display: block;
     text-decoration: none;
     padding: 0.8rem 10px;
@@ -78,6 +82,11 @@ header span{
 .navigation a:hover{
     background-color: var(--font-color);
     color: white;
+}
+h1{
+    font-family: var(--heading-font2);
+    color: var(--font-color);
+
 }
 /**************BUTTONS*************************/
 .menu{
@@ -139,12 +148,14 @@ button {
 .business-members{
     display: grid;
    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+   box-sizing: border-box;
     gap: 10px;  
     
 }
+
 .cards{
     max-width: 100%;            /*rule to make the content not overflow*/
-    box-sizing: border-box;     /*the container*/
+        /*the container*/
     border: 1px solid rgba(0, 0, 0, 0.1);       /* light gray line */
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08); /* soft shadow bottom & right */
   border-radius: 8px;                         /* optional: soft corners */
