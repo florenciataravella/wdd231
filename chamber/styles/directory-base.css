@@ -69,6 +69,9 @@ header span{
  margin: 0%;
  
 }
+.navigation li.current{
+    background-color:#e7f3e8 ;
+}
 .navigation a{
     box-sizing: border-box;
     display: block;
@@ -108,82 +111,78 @@ button {
 	}
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-	align-items: center;
-
+	
 	section {
 		text-align: center;
 		& > * {
 			margin: 0.1rem;
 		}
 	}
+    .business-members{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+	    align-items: center;
+        margin-bottom: 1rem;
+    }
 
 	img {
 		border: 1px solid #fff;
 		box-shadow: 0 0 1rem #555;
 	}
+    .cards{
+    max-width: 100%;            /*rule to make the content not overflow*/
+        /*the container*/
+    border: 1px solid rgba(0, 0, 0, 0.1);       /* light gray line */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08); /* soft shadow bottom & right */
+    border-radius: 8px;                         /* optional: soft corners */
+    background-color: #fff;                     /* clean base for content */
+    padding: 1.2rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px 40px 20px 40px;
+    }
+
 }
 .list{
 	display: flex;
 	flex-direction: column;
+    
 
-	section {
-		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
-		margin: 0;
-		padding: 0.25rem;
-
-		& > * {
-			margin: 0 1rem;
-		}
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+    }
 
 		img {
 			display: none;
 		}
+        .name{
+            font-size: 0.8rem;
+        }
+    .cards:nth-child(even){
+        background-color: #e7f3e8;
     }
-}
-/**************CARDS*************************/
-.business-members{
-    display: grid;
-   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-   box-sizing: border-box;
-    gap: 10px;  
     
-}
+    }
 
-.cards{
-    max-width: 100%;            /*rule to make the content not overflow*/
-        /*the container*/
-    border: 1px solid rgba(0, 0, 0, 0.1);       /* light gray line */
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08); /* soft shadow bottom & right */
-  border-radius: 8px;                         /* optional: soft corners */
-  background-color: #fff;                     /* clean base for content */
-  padding: 1.2rem;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 50px 40px 20px 40px;
 
-}
 p{
     font-family: var(--text-font);
-    font-weight:200;
+    font-weight:400;
     font-size: 0.7rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    max-width: 100%;            /*rule to make the content not overflow*/
-    box-sizing: border-box;
-}
+    max-width: 100%;            
+ }
 p.name{
+    font-family: var(--text-font);
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
-    
-    
 }
 .cards img{
     width: 90px;
@@ -204,12 +203,13 @@ p.name{
     box-sizing: border-box; 
     font-size: 0.6rem;
     text-decoration:underline;
-    color: #3a5178;
+    color: #1f2b41;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    font-family: var(--text-font);
 }
 .web:visited{
-    color: #3a5178;
+    color: #550d0f;
 }
 .web:hover{
     color: var(--font-color);

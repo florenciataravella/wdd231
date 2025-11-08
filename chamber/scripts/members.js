@@ -54,6 +54,7 @@ function displayMembers(members){
         portrait.setAttribute("loading", "lazy");
         portrait.setAttribute("width","150");
         portrait.setAttribute("height","150");
+        portrait.setAttribute("loading","lazy");
 
         card.appendChild(name);
         name.classList.add("name");
@@ -77,10 +78,19 @@ async function init(){
 init();
 const gridBtn=document.querySelector("#grid");
 const listBtn=document.querySelector("#list");
-const display=document.querySelector(".business-members");
+const display=document.querySelector("article");
 
-gridBtn.addEventListener("click", ()=>{
+gridBtn.addEventListener("click", () => {
     display.classList.add("grid");
     display.classList.remove("list");
 });
-
+listBtn.addEventListener("click", ()=>{
+    display.classList.add("list");
+    display.classList.remove("grid");
+})
+/*gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+*/
