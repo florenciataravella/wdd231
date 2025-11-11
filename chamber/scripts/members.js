@@ -88,9 +88,4 @@ listBtn.addEventListener("click", ()=>{
     display.classList.add("list");
     display.classList.remove("grid");
 })
-/*gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-*/
+
