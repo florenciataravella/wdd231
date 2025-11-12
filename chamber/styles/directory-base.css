@@ -117,8 +117,8 @@ button {
 		& > * {
 			margin: 0.1rem;
 		}
-	}
-    .business-members{
+    }}
+.grid .business-members{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 5px;
@@ -126,11 +126,11 @@ button {
         margin-bottom: 1rem;
     }
 
-	img {
+.grid img {
 		border: 1px solid #fff;
 		box-shadow: 0 0 1rem #555;
 	}
-    .cards{
+.grid .cards{
     max-width: 100%;            /*rule to make the content not overflow*/
         /*the container*/
     border: 1px solid rgba(0, 0, 0, 0.1);       /* light gray line */
@@ -144,27 +144,23 @@ button {
     grid-template-rows: 100px 50px 40px 20px 40px;
     }
 
-}
 .list{
 	display: flex;
 	flex-direction: column;
-    
+}
 
-    .cards{
+.list .cards{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 2fr;
-    }
-
-		img {
+        }
+.list img {
 			display: none;
-		}
-        .name{
+	    	}
+.list .name{
             font-size: 0.8rem;
         }
-    .cards:nth-child(even){
+ .list .cards:nth-child(even){
         background-color: #e7f3e8;
-    }
-    
     }
 
 
