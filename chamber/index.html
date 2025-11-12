@@ -12,10 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="styles/directory-base.css" rel="stylesheet">
-    <link href="styles/directory-large.css" rel="stylesheet">
+    <link href="styles/home-base.css" rel="stylesheet">
+    <link href="styles/home-larger.css" rel="stylesheet">
     
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/members.mjs" type="module"></script>
     <script src="scripts/navigation.mjs" type="module"></script>
     <script src="scripts/footer.mjs" type="module"></script>
     <script src="scripts/index-modules.mjs" type="module"></script>
@@ -44,15 +44,26 @@
         </ul>
     </nav>
     <main>
-        <h1> Home</h1>
+        
         <div class="hero">
             <picture>
                 <source srcset="images/hero.jpg" media="(min-width:48rem)">
                 <img src="images/hero-small.jpg" alt="City of Cordoba picture" width="480" height="314"> 
+                <button id="join-btn" aria aria-label="Join us button">Join Us</button>
             </picture>
-            </div>
-            
-            <section class="business-members">
+        </div>
+        <div class="cards">
+            <h1> Home</h1>
+                <section class="section1">
+                    <div id="events"> Events</div>
+                    <div id="c-weather">Current Weather</div>
+                    <div id="forecast"> Weather Forecast</div>
+                </section>
+                <section class="section2">
+                    <div class="spotlights"></div>
+                </section>
+        </div>
+
 
             </section>
         
