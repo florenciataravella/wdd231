@@ -89,9 +89,22 @@ header span{
 /**************HERO*************************/
 .hero{
     position: relative;
+    
 }
-.hero picture{
+/*.hero picture{
     position: absolute;
+    display: block;
+
+}*/
+.hero .join{
+    position: absolute;
+
+}
+.hero img {
+  width: 100%;                 
+  height: 100%;
+  object-fit: cover;  /*This rule makes the image cover the width of its parent*/
+  display: block;
 }
 /**************SECTIONS*************************/
 h1{
