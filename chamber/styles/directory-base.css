@@ -110,14 +110,12 @@ button {
         border:1px solid white;  
 	}
 
-.grid {
+
 	
-	section {
+.grid section {
 		text-align: center;
-		& > * {
-			margin: 0.1rem;
-		}
-    }}
+		
+        }
 .grid .business-members{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
