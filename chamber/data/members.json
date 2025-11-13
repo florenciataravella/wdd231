@@ -5,49 +5,56 @@
             "address": "4072 E Arch Drive Meridian",
             "phone": "(208) 632-436",
             "weburl":"https://www.churchofjesuschrist.org/?lang=eng",
-            "image":"https://florenciataravella.github.io/wdd231/chamber/images/anitadallinger.svg"
+            "image":"https://florenciataravella.github.io/wdd231/chamber/images/anitadallinger.svg",
+            "membership":"silver"
         },
         {
             "name":"dasAuto Concessionaire",
             "address": "5th Avenue 105 Cross Street",
             "phone": "(208) 841-436",
             "weburl":"https://www.churchofjesuschrist.org/?lang=eng",
-            "image":"https://florenciataravella.github.io/wdd231/chamber/images/dasauto.svg"
+            "image":"https://florenciataravella.github.io/wdd231/chamber/images/dasauto.svg",
+            "membership":"gold"
         },
         {
             "name":"David Walter Developers",
             "address": "Roosevelt Avenue and Kennedy Street",
             "phone": "(208) 841-586",
             "weburl":"https://www.churchofjesuschrist.org/?lang=eng",
-            "image":"https://florenciataravella.github.io/wdd231/chamber/images/davidwalter.svg"
+            "image":"https://florenciataravella.github.io/wdd231/chamber/images/davidwalter.svg",
+            "membership":"bronce"
         },
         {
             "name":"Heim & Hof Inmobilien",
             "address": "Hyde Park and Victoria Street",
             "phone": "(215) 691-586",
             "weburl":"https://www.churchofjesuschrist.org/?lang=eng",
-            "image":"https://florenciataravella.github.io/wdd231/chamber/images/inmobilienlogo.svg"
+            "image":"https://florenciataravella.github.io/wdd231/chamber/images/inmobilienlogo.svg",
+            "membership":"silver"
         },
         {
             "name":"Kluger Architects",
             "address": "73 Diagonal Street",
             "phone": "(198) 235-586",
             "weburl":"https://www.churchofjesuschrist.org/?lang=eng",
-            "image":"https://florenciataravella.github.io/wdd231/chamber/images/kluger.svg"
+            "image":"https://florenciataravella.github.io/wdd231/chamber/images/kluger.svg",
+            "membership":"gold"
         },
         {   
             "name":"Momoka Developers",
             "address": "Empire State Street 437",
             "phone": "(207) 785-123",
             "weburl":"https://www.churchofjesuschrist.org/?lang=eng",
-            "image":"https://florenciataravella.github.io/wdd231/chamber/images/momoka.svg"
+            "image":"https://florenciataravella.github.io/wdd231/chamber/images/momoka.svg",
+            "membership":"silver"
         },
         {   
             "name":"Rimberio Caffeteria",
             "address": "Anonymous Street 125",
             "phone": "(204) 523-586",
             "weburl":"https://www.churchofjesuschrist.org/?lang=eng",
-            "image":"https://florenciataravella.github.io/wdd231/chamber/images/rimberio.svg"
+            "image":"https://florenciataravella.github.io/wdd231/chamber/images/rimberio.svg",
+            "membership":"gold"
         }
 
     ]

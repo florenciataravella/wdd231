@@ -31,10 +31,6 @@ function displayResults(data){
     myTemperature.innerHTML=`${data.main.temp}&deg;F`
     const iconSrc=`//openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     myGraphic.setAttribute("SRC",iconSrc);
-    myGraphic.setAttribute("alt", data.weather[0].description);
-    
-
-
-    
+    myGraphic.setAttribute("alt", data.weather[0].description);   
 }
 0
