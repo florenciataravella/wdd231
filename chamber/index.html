@@ -15,7 +15,7 @@
     <link href="styles/home-base.css" rel="stylesheet">
     <link href="styles/home-larger.css" rel="stylesheet">
     
-    
+    <script src="scripts/weather.mjs" type="module"></script>
     <script src="scripts/navigation.mjs" type="module"></script>
     <script src="scripts/footer.mjs" type="module"></script>
     <script src="scripts/index-modules.mjs" type="module"></script>
@@ -57,8 +57,19 @@
             <h1> Home</h1>
                 <section class="section1">
                     <div id="events"> Events</div>
-                    <div id="c-weather">Current Weather</div>
-                    <div id="forecast"> Weather Forecast</div>
+                    <div id="c-weather">
+                       <h2>Current Weather></h2> 
+                       <p id="temperature"></p>
+                       <p id="description"></p>
+                       <img id="graphic" src="" alt="">
+                    </div>
+                    <div id="forecast"> 
+                        <h2>Weather Forecast</h2> 
+                       <p id="today"></p>
+                       <p id="tomorrow"></p>
+                        <p id="pasttomorrow"></p>
+                    
+                    </div>
                 </section>
                 <section class="section2">
                     <!--<div class="spotlights"></div>-->
