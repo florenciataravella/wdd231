@@ -16,6 +16,7 @@ body{
 main{
      max-width: 900px;
      margin: 0;
+     margin-bottom: 3rem;
 }
 /********************HEADER*************************/
 header{
@@ -154,7 +155,11 @@ grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     grid-template-rows: 40px 40px 40px 40px 40px 100px;
 }
-
+.cards img {
+  max-width: 100%;
+  max-height: 100px;      /* or 80px, whatever fits */
+  object-fit: contain;
+}
 /*.grid section {
 		text-align: center;
 		
