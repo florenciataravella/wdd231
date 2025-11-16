@@ -111,7 +111,7 @@ h1{
     font-family: var(--heading-font2);
     color: var(--font-color);
 }
-.cards{
+.sections{
     max-width: 100%;
     display: grid;
     grid-template-rows: 60px 250px 220px;
@@ -141,7 +141,7 @@ grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;   
     grid-template-rows: 1fr;
 }
-.spotlights .cards{
+.cards{
     display: grid;
     
     max-width: 100%;            /*rule to make the content not overflow*/
@@ -152,7 +152,7 @@ grid-template-columns: 1fr 1fr 1fr;
     background-color: #fff;                     /* clean base for content */
     padding: 1.2rem;
     justify-content: center;
-    grid-template-rows: 20px 20px 20px 20px 20px 40px;
+    grid-template-rows: 40px 40px 40px 40px 40px 100px;
 }
 
 /*.grid section {
@@ -166,12 +166,12 @@ grid-template-columns: 1fr 1fr 1fr;
 	    align-items: center;
         margin-bottom: 1rem;
     }
-
-.grid img {
+*/
+.cards img {
 		border: 1px solid #fff;
 		box-shadow: 0 0 1rem #555;
 	}
-/*.web{
+.web{
     max-width: 100%;            
     box-sizing: border-box; 
     font-size: 0.6rem;
@@ -187,7 +187,7 @@ grid-template-columns: 1fr 1fr 1fr;
 .web:hover{
     color: var(--font-color);
     cursor: pointer;
-}*/
+}
 /******************FOOTER************************/
 footer{
     background-color: var(--font-color);
