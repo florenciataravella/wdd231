@@ -59,6 +59,7 @@ function displayGoldSilverMembers(members){
     for(let i=0; i<3; i++){ 
         let randomN=goldSilverMembers.length;
     let randonNN=Math.floor(Math.random()*randomN);
+    
     console.log(randomN);
     console.log(randonNN)
     /*randomMember.forEach(member=>{*/
@@ -97,8 +98,8 @@ function displayGoldSilverMembers(members){
 
         card.classList.add("cards");
         spotlightMembers.appendChild(card);
-        let goldSilverMembers=members.filter(m=>m.indexof()!=randonNN);
-
+        goldSilverMembers.splice(randonNN, 1);
+        
     }
       }
         

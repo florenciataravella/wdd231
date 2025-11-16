@@ -112,24 +112,65 @@ h1{
     color: var(--font-color);
 }
 .cards{
+    max-width: 100%;
     display: grid;
+    grid-template-rows: 60px 250px 220px;
 }
 .section1{
 display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr;
 }
 .section2{
 display: grid;
+grid-template-columns: 1fr 1fr 1fr;
 }
+.events{
+    grid-column: 1/2;
+}
+.c-weather{
+    grid-column: 2/3;
+}
+.forecast{
+    grid-column: 3/4;
+}
+
+
 .spotlights{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));    /*ver tamanos*/
-    grid-template-rows: 100px 50px 40px 20px 40px;;
+    grid-template-columns: 1fr 1fr 1fr;   
+    grid-template-rows: 1fr;
+}
+.spotlights .cards{
+    display: grid;
+    
+    max-width: 100%;            /*rule to make the content not overflow*/
+        /*the container*/
+    border: 1px solid rgba(0, 0, 0, 0.1);       /* light gray line */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08); /* soft shadow bottom & right */
+    border-radius: 8px;                         /* optional: soft corners */
+    background-color: #fff;                     /* clean base for content */
+    padding: 1.2rem;
+    justify-content: center;
+    grid-template-rows: 20px 20px 20px 20px 20px 40px;
 }
 
+/*.grid section {
+		text-align: center;
+		
+        }
+.grid .business-members{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+	    align-items: center;
+        margin-bottom: 1rem;
+    }
 
-
-
-
+.grid img {
+		border: 1px solid #fff;
+		box-shadow: 0 0 1rem #555;
+	}
 /*.web{
     max-width: 100%;            
     box-sizing: border-box; 
