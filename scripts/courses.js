@@ -142,6 +142,7 @@ function createWDDCoursesCard(courses){
 }
 function createCSECoursesCard(courses){
     const CSEcourses=courses.filter(course=>course.subject=="CSE");
+    
     CSEcourses.forEach(course=>{
         let card=document.createElement("section");
         let courseSubject=document.createElement("p");
@@ -159,7 +160,11 @@ function createCSECoursesCard(courses){
     card.classList.add("CSEcoursesCard","hidden");
     document.querySelector("#courses").appendChild(card);
 
+    card.addEventListener("click",()=>{
+        displayCourseDetails(course)
     })
+    })
+
 }
 createCoursesCard(courses);
 
@@ -199,3 +204,24 @@ CSEcoursesbtn.addEventListener("click", ()=>{
         
     });
 
+function displayCourseDetails(course) {
+    const courseDetails=document.querySelector("#course-details")
+    const closeModal=document.querySelector("#closeModal")
+
+courseDetails.innerHTML =" ";
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+
+    courseDetails.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}

@@ -1,0 +1,61 @@
+{
+    "levels":[
+        {
+            "name":"Non-profit",
+            "cost":"free",
+            "communications":true,
+            "invitations": true,
+            "directory-listing":"Basic",
+            "trainings":false,
+            "discounts": false,
+            "sm-spotlights": false,
+            "homepage-spotlights": false,
+            "visibility": false,
+            "semminars":false,
+            "business-support":false
+        },
+        
+        {
+           "name":"Bronze",
+            "cost":"$",
+            "communications":true,
+            "invitations": true,
+            "directory-listing":"Enhanced",
+            "trainings":true,
+            "discounts": true,
+            "sm-spotlights": false,
+            "homepage-spotlights": false,
+            "visibility": false,
+            "semminars":false,
+            "business-support":false
+        },
+        {
+            "name":"Silver",
+            "cost":"$$",
+            "communications":true,
+            "invitations": true,
+            "directory-listing":"Enhanced",
+            "trainings":true,
+            "discounts": "Extra",
+            "sm-spotlights": true,
+            "homepage-spotlights": "Quarterly",
+            "visibility": true,
+            "semminars":"Priority access",
+            "business-support":false
+        },
+        {
+            "name":"Gold",
+            "cost":"$$$",
+            "communications":true,
+            "invitations": true,
+            "directory-listing":"Premium",
+            "trainings":false,
+            "discounts": "Maximum",
+            "sm-spotlights": "Premium placement",
+            "homepage-spotlights": "Priority / Featured",
+            "visibility": "Premium placement",
+            "semminars":"VIP access",
+            "business-support":true
+        }
+    ]
+}

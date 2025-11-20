@@ -255,3 +255,28 @@ p{
     color: var(--font-color);
     font-weight: 200;
 }
+#courses-details{
+    width: 90%;
+    max-width: 600px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0 , 0 / 0.5);
+    padding: 20px;
+}
+::backdrop{
+    background-color: (0, 0 , 0 / 0.5);
+}
+#courses-details div{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#courses-details h2{
+    font-family: var(--text--font);
+    font-size: 1.5rem;
+}
+#closeModal{
+    width: 44px;
+    justify-self: end;
+
+}
