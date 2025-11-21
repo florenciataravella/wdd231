@@ -121,10 +121,50 @@ button {
         box-shadow: 0 0 10px rgb(0 0 0 / 50%);
         text-align: center;
 	}
+/******************FORM***********************/
+.join-form{
+    margin: 2rem;
+    border: 1px solid var(--font-color);
+    border-radius: 2px;
+    padding: 2rem;
+    font-family: var(--text-font);
+}
 
+.join-form label{
+    display: block;
+    margin-bottom: .4rem;
+}
+.join-form input[type="text"],
+                [type="email"],
+                [type="tel"]
+{
+    display: block;
+    margin-bottom: .2rem;
+    background-color: var(--wayfinding-color);
+    border: 1px solid var(--font-color) ;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    box-sizing: border-box;
+}
+.join-form fieldset label{
+  display: block;
+}
+.join-form fieldset{
+    padding-top: 1rem;
+}
 
-	
-.grid section {
+.join-form input[type="submit"]{
+    margin-top: 2rem;
+    margin-left: 2rem ;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: var(--wayfinding-color);
+    font-size: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(108, 99, 99, 0.5);
+}
+/*.grid section {
 		text-align: center;
 		
         }
@@ -141,12 +181,11 @@ button {
 		box-shadow: 0 0 1rem #555;
 	}
 .grid .cards{
-    max-width: 100%;            /*rule to make the content not overflow*/
-        /*the container*/
-    border: 1px solid rgba(0, 0, 0, 0.1);       /* light gray line */
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08); /* soft shadow bottom & right */
-    border-radius: 8px;                         /* optional: soft corners */
-    background-color: #fff;                     /* clean base for content */
+    max-width: 100%;           
+    border: 1px solid rgba(0, 0, 0, 0.1);        light gray line 
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08);  soft shadow bottom & right 
+    border-radius: 8px;                          optional: soft corners
+    background-color: #fff;                      clean base for content
     padding: 1.2rem;
     justify-content: center;
     display: grid;
@@ -154,7 +193,7 @@ button {
     grid-template-rows: 100px 50px 40px 20px 40px;
     }
 
-
+*/
 p{
     font-family: var(--text-font);
     font-weight:400;
