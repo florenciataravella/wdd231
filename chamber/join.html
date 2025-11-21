@@ -12,13 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="styles/directory-base.css" rel="stylesheet">
+    <link href="styles/join-base.css" rel="stylesheet">
     <link href="styles/directory-large.css" rel="stylesheet">
     
     <script src="scripts/join.js" defer></script>
     <script src="scripts/navigation.mjs" type="module"></script>
     <script src="scripts/footer.mjs" type="module"></script>
-    <script src="scripts/index-modules.mjs" type="module"></script>
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Cordoba Chamber of Commerce">
@@ -57,22 +56,27 @@
             <label for="silver">Silver</label><input type="radio" id="silver" name="membership-select"  value="Silver"/>
             <label for="gold">Gold</label><input type="radio" id="gold" name="membership-select"  value="Gold"/>
             </fieldset>
+            <input type="submit" value="Join the Chamber">
         </form>
         <section class= "membership-cards">
             <div>
+                <h3> Non-profit Member</h3>
                 <button id="np-btn">Know more</button>
             </div>
             <div>
+                <h3> Bronze Member</h3>
                 <button id="bronze-btn">Know more</button>
             </div>
             <div>
+                <h3> Silver Member</h3>
                 <button id="silver-btn">Know more</button>
             </div>
             <div>
+                <h3> Gold Member</h3>
                 <button id="gold-btn">Know more</button>
             </div>
             <dialog id="membership-details">
-                
+
             </dialog>
         </section>
          
