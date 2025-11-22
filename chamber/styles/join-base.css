@@ -161,6 +161,13 @@ h1{
     appearance: none;
     box-sizing: border-box;
 }
+.join-form input[type="text"]:focus-visible,
+                [type="email"]:focus-visible,
+                [type="tel"]:focus-visible,
+                [type="submit"]:focus-visible{  
+    outline: 2px solid #000;
+    outline-offset: 2px;
+   }
 .join-form fieldset label{
   display: block;
 }
@@ -180,6 +187,7 @@ h1{
 
     transition: background-color 0.5 ease-in-out;
 }
+
 p{
     font-family: var(--text-font);
     font-weight:400;
