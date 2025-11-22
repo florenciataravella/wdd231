@@ -101,6 +101,10 @@ goldbtn.addEventListener("click",()=>{
     const goldlevels=levels.filter(level=>level.name=="Gold");
     displayMembershipDetails(goldlevels)
 })
+document.querySelector(".join-form").addEventListener("submit", () => {
+  const now = new Date().toISOString();
+  document.querySelector("#timestamp").value = now;
+});
 
 function displayMembershipDetails(levels) {
     levels.forEach(level => {

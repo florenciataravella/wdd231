@@ -3,7 +3,6 @@ const getString=window.location.search;
 console.log(getString);
 
 const myInfo=new URLSearchParams(getString);
-
 const formInfo=document.querySelector("#thankyou")
 formInfo.innerHTML=`
     <p>Thank you, ${myInfo.get("firstname")} ${myInfo.get("lastname")}</p>
@@ -14,6 +13,6 @@ formInfo.innerHTML=`
     <p>Email: ${myInfo.get("email")}</p>
     <p>Cellphone: ${myInfo.get("cellphone")}</p>
     <p>Membership selection: ${myInfo.get("membership-select")}</p>
+    <p>Submission time: ${myInfo.get("timestamp")}
         `
 
-/*firstname=florencia&lastname=taravella&title=directora&email=florenciataravella%40gmail.com&cellphone=%2B543513057171&organization=bunibliss&membership-select=np*/

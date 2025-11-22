@@ -13,11 +13,12 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/join-base.css" rel="stylesheet">
-    <link href="styles/directory-large.css" rel="stylesheet">
+    <link href="styles/join-larger.css" rel="stylesheet">
     
     <script src="scripts/join.js" defer></script>
     <script src="scripts/navigation.mjs" type="module"></script>
     <script src="scripts/footer.mjs" type="module"></script>
+    <script src="scripts/index-modules.mjs" type="module"></script>
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Cordoba Chamber of Commerce">
@@ -47,7 +48,7 @@
             <label for="lastname"> Last Name:</label><input type="text" id="lastname" name="lastname" title="Write your last name here" autocomplete="family-name" required/>
             <label for="title"> Title:</label><input type="text" name="title" id="title" title="Business title" autocomplete="organization-title" pattern="{7}[A-Za-z0-9\- ]+"/>
             <label for="email"> Email:</label><input type="email" name="email" id="email" title="Write your email here" autocomplete="email" placeholder="example@email.com" required/>
-            <label for="mobile"> Cell phone:</label><input type="tel" name="cellphone" id="mobile" title="Write your cell phone here" autocomplete="tel" required/>
+            <label for="mobile"> Cell phone:</label><input type="tel" name="cellphone" id="mobile" title="Write your cell phone here" autocomplete="tel" pattern=[0-9]+ required/>
             <label for="organization"> organization:</label><input type="text" id="organization" name="organization" title="Organization name" autocomplete="organization" required/>
             <fieldset>
                 <legend>Membership selection</legend>
@@ -56,23 +57,24 @@
             <label for="silver"><input type="radio" id="silver" name="membership-select"  value="Silver"/>Silver</label>
             <label for="gold"><input type="radio" id="gold" name="membership-select"  value="Gold"/>Gold</label>
             </fieldset>
+            <input type="hidden" name="timestamp" id="timestamp">
             <input type="submit" value="Join the Chamber">
         </form>
         <section class= "membership-cards">
             <div>
-                <h3> Non-profit Member</h3>
-                <button id="np-btn">Know more</button>
+                <h4> Non-profit Member</h4>
+                <button id="np-btn" >Know more</button>
             </div>
             <div>
-                <h3> Bronze Member</h3>
+                <h4> Bronze Member</h4>
                 <button id="bronze-btn">Know more</button>
             </div>
             <div>
-                <h3> Silver Member</h3>
+                <h4> Silver Member</h4>
                 <button id="silver-btn">Know more</button>
             </div>
             <div>
-                <h3> Gold Member</h3>
+                <h4> Gold Member</h4>
                 <button id="gold-btn">Know more</button>
             </div>
             <dialog id="membership-details">
