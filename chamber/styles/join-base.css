@@ -15,6 +15,9 @@ body{
 main{
      max-width: 900px;
      margin: 0;
+}
+.classmain{
+
      display: grid;
      grid-template-columns: 1fr 1fr;
      justify-items: center;
@@ -92,6 +95,8 @@ header span{
 h1{
     font-family: var(--heading-font2);
     color: var(--font-color);
+    grid-row: 1;
+    grid-column: 1/2;
 
 }
 /******************MSH CARDS***********************/
@@ -141,6 +146,7 @@ h1{
     border-radius: 2px;
     padding: 2rem;
     font-family: var(--text-font);
+
 }
 
 .join-form label{
