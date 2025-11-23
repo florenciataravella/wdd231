@@ -187,7 +187,10 @@ h1{
 
     transition: background-color 0.5 ease-in-out;
 }
-
+.join-form #description{
+    width: 100%;
+    max-width: 400px;
+}
 p{
     font-family: var(--text-font);
     font-weight:400;

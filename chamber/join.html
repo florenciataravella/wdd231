@@ -43,6 +43,7 @@
         </ul>
     </nav>
     <main>
+        <h1>Join the chamber</h1>
         <form action="thankyou.html" method="get" class="join-form">
             <label for="firstname"> First Name:</label><input type="text" id="firstname" name="firstname" title="Write your first name here" autocomplete="given-name" required/>
             <label for="lastname"> Last Name:</label><input type="text" id="lastname" name="lastname" title="Write your last name here" autocomplete="family-name" required/>
@@ -50,7 +51,11 @@
             <label for="email"> Email:</label><input type="email" name="email" id="email" title="Write your email here" autocomplete="email" placeholder="example@email.com" required/>
             <label for="mobile"> Cell phone:</label><input type="tel" name="cellphone" id="mobile" title="Write your cell phone here" autocomplete="tel" pattern=[0-9]+ required/>
             <label for="organization"> organization:</label><input type="text" id="organization" name="organization" title="Organization name" autocomplete="organization" required/>
-            <fieldset>
+           
+            <div class="textarea">
+            <label for="description"> Business description<span>(Optional)</span></label><textarea rows="5" name="description" id="description"></textarea>
+                </div>
+                 <fieldset>
                 <legend>Membership selection</legend>
             <label for="np"><input type="radio" id="np" name="membership-select"  value="np"/>NP</label>
             <label for="bronze"><input type="radio" id="bronze" name="membership-select"  value="Bronze"/>Bronze</label>
