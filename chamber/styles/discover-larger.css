@@ -1,0 +1,33 @@
+@media only screen and (min-width:57rem){
+    .hamburger{
+        display: none;
+    }
+    header{
+        grid-template-columns: 40px auto;
+    }
+    header, main, nav, footer{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    header span{
+        font-size: 3rem;
+        display: flex;
+    }
+    .navigation{
+        display: block;
+    }
+    .navigation ul{
+        display: flex;
+        border-bottom: 1px solid #ccc;
+    }
+    .navigation a{
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    #placesCards{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}  

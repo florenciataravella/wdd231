@@ -3,7 +3,7 @@ import { places } from "../data/places.mjs";
 
     
 
-    const div=document.querySelector("#placesCards")
+    const divp=document.querySelector("#placesCards")
     const myD=document.querySelector("#myDialog")
     const closeD=document.querySelector("#closeDialog")
     
@@ -13,14 +13,13 @@ import { places } from "../data/places.mjs";
     function displayItems(info){
     info.forEach(x => {
 
+        const div=document.createElement("div")
         const title=document.createElement("h2")
         const portrait=document.createElement("figure")
         const photo=document.createElement("img")
         const description=document.createElement("p")
         const button=document.createElement("button")
         
-
-
         title.innerHTML=x.name;
         div.appendChild(title)
 
@@ -35,10 +34,10 @@ import { places } from "../data/places.mjs";
 
         button.textContent="Know more"
         div.appendChild(button)
+        div.classList.add("card")
+        divp.appendChild(div)
         button.addEventListener("click",()=> knowMore(x))
-        
-        
-        
+    
     });
         
     }
@@ -97,9 +96,11 @@ else{
 
     if (differenceMs<msToDays){
         message="Back so soon! Awesome!"
+        console.log(numVisits)
     }
     else{
         message=`You last visited ${differenceDays} days ago.`
+        console.log(numVisits)
     }}
     visitsDisplay.textContent=message
     numVisits++;

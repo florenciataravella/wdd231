@@ -98,123 +98,53 @@ header span{
     justify-self: center;
 }
 
-/**************BUTTONS*************************/
-.menu{
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-    margin-bottom: 1rem;
-    background-color: #2a5711;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-button {
-		padding: 0.5rem 1rem;
-		font-weight: 700;
-        background-color: #2a5711;
-        color: #f2f5f5;
-        font-family: var(--text-font);
-        border:1px solid white;  
-	}
-
-
-	
-.grid section {
-		text-align: center;
-		
-        }
-.grid .business-members{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 5px;
-	    align-items: center;
-        margin-bottom: 1rem;
-    }
-
-.grid img {
-		border: 1px solid #fff;
-		box-shadow: 0 0 1rem #555;
-	}
-.grid .cards{
-    max-width: 100%;            /*rule to make the content not overflow*/
-        /*the container*/
-    border: 1px solid rgba(0, 0, 0, 0.1);       /* light gray line */
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08); /* soft shadow bottom & right */
-    border-radius: 8px;                         /* optional: soft corners */
-    background-color: #fff;                     /* clean base for content */
-    padding: 1.2rem;
-    justify-content: center;
+/**************CARDS*************************/
+#placesCards .card{
+    border: 1px solid rgb(189, 213, 203);
+    margin: 1rem 8px;
+    background-color: var(--wayfinding-color);
+    border-radius: 8px;
+    overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 50px 40px 20px 40px;
-    }
-
-.list{
-	display: flex;
-	flex-direction: column;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "know-more"
+    ;
 }
-
-.list .cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 2fr;
-        }
-.list img {
-			display: none;
-	    	}
-.list .name{
-            font-size: 0.8rem;
-        }
- .list .cards:nth-child(even){
-        background-color: #e7f3e8;
-    }
-
-
-p{
-    font-family: var(--text-font);
-    font-weight:400;
-    font-size: 0.7rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: 100%;            
- }
-p.name{
-    font-family: var(--text-font);
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-}
-.cards img{
-    width: 90px;
-    height: auto;
-}
-
-.portrait{
-    width: 120px;
-    height: auto;
-    box-sizing: border-box; 
+#placesCards .card h2{
+    grid-area: name;
     justify-self: center;
-    grid-row: 1;
-    border: 1px solid #fff;
+    font-family: var(--heading-font);
 }
-
-.web{
-    max-width: 100%;            /*rule to make the content not overflow*/
-    box-sizing: border-box; 
-    font-size: 0.6rem;
-    text-decoration:underline;
-    color: #1f2b41;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+#placesCards .card figure{
+    grid-area: photograph;
+    justify-self: center;
+    
+    box-sizing: border-box;
+}
+#placesCards .card p{
+    grid-area: description;
+    justify-self: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-family: var(--text-font);
 }
-.web:visited{
-    color: #550d0f;
+#placesCards .card button{
+    grid-area: know-more;
+    justify-self: center;
+    margin-bottom: 2rem;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    font-family: var(--text-font);
+    font-weight: 500;
+    background-color: var(--font-color);
+    color: var(--wayfinding-color);
 }
-.web:hover{
-    color: var(--font-color);
-    cursor: pointer;
+ #placesCards .card img{
+   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+   width: 100%;
+    
 }
 /******************FOOTER************************/
 footer{
@@ -250,13 +180,4 @@ footer p{
     font-family: var(--heading-font2);
     color: white;
     font-weight: 200;
-}
-@media (max-width: 600px) {
-.list .cards{
-    grid-template-columns: 1fr 1fr;
-}
-.list .cards p:nth-child(3){
-    display: none;
-}
-
 }

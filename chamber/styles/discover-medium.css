@@ -1,0 +1,12 @@
+@media (min-width:38rem) and (max-width:56rem){
+    /**************CARDS*************************/
+#placesCards .card{
+  
+    display: grid;
+    grid-template-areas: 
+    "name name"
+    "photograph description"
+    "photograph know-more";
+}
+
+}
