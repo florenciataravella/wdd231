@@ -1,0 +1,131 @@
+:root{
+    --regular-text: "Inter", sans-serif;
+    --button-text:white;
+    --mint-color:#D4EBE8;
+    --beige-color:#F3EFE8;
+    --gray-color:#E5E7EB;
+    --purple-color:#9c57b5;
+
+}
+body{
+    margin-left: 1rem;
+    box-sizing: border-box;
+}
+main{
+     max-width: 900px;
+     margin: 0;
+     background-color: var(--mint-color);
+}
+/********************HEADER*************************/
+header{
+    display: grid;
+    grid-template-columns: 40px auto 44px;
+    padding: 5px 0 10px;
+    column-gap: 8px;
+    align-items:center;
+    background-color: black;
+}
+header img{
+    display: block;
+    width: 150px;
+    height: auto;
+}
+header span{
+    font-family: var(--regular-text);
+    color:var(--button-text) ;
+    font-size: 2rem;
+    font-weight:600;
+    padding-left: 80px;
+    align-self: center;
+
+}
+/**************HAMBURGER NAVIGATION*************************/
+.hamburger{
+    background-color: var(--header-color);
+    border: none;
+    cursor: pointer;
+}
+.hamburger::before{
+    content: "\2630";
+    font-size: 2rem;
+    color: var(--font-color);
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+    font-size: 2.5rem;
+}
+/**************NAVIGATION*************************/
+.navigation{
+    display: none;
+
+   }
+.navigation.show{
+    display: block;
+}
+.navigation ul{
+ list-style-type: none;
+ padding: 0%;
+ margin: 0%;
+ 
+}
+.navigation li.current{
+    background-color:#e7f3e8 ;
+}
+.navigation a{
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem 10px;
+    font-family: var(--text-font);
+    color: var(--font-color);
+    background-color: var(--normal-color);
+    border: solid 1px var(--active-color);
+}
+.navigation a:hover{
+    background-color: var(--font-color);
+    color: white;
+}
+h1{
+    font-family: var(--heading-font2);
+    color: var(--font-color);
+
+}
+
+
+/******************FOOTER************************/
+footer{
+    background-color: var(--font-color);
+    padding: 1rem 10px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+}
+.social{
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+}
+footer img{
+    width:22px;
+    height: 22px;
+}
+.social a{
+
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a:hover{
+    border: solid 1px var(--normal-color);
+    background-color: white;
+    border-radius: 24px;
+}
+footer p{
+    font-family: var(--heading-font2);
+    color: white;
+    font-weight: 200;
+}
+
