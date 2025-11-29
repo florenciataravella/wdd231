@@ -8,5 +8,20 @@
     "photograph description"
     "photograph know-more";
 }
+@keyframes resize{
+    from{
+        width: 300px;
+        height:200px;
+    }
+    to{
+        with:340px;
+        height:230px;
+    }
+}
+#placesCards .card figure:hover{
+    animation: resize 0.7s 
+    ;
+
+}
 
 }

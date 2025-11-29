@@ -131,9 +131,6 @@ header span{
     justify-self: center;
     box-sizing: border-box;
 }
-#placesCards .card figure:hover{
-    
-}
 
 #placesCards .card p{
     grid-area: description;
