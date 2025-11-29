@@ -100,7 +100,8 @@ header span{
 }
 #numVisits{
     font-family: var(--text-font);
-    font-size: 0.4rem;
+    font-size: 0.7rem;
+    color:var(--font-color);
 
 }
 
