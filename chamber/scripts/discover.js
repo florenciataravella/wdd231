@@ -95,11 +95,11 @@ else{
     const differenceDays=Math.floor(differenceMs/msToDays)
 
     if (differenceMs<msToDays){
-        message="Back so soon! Awesome!"
+        message=`"Back so soon! Awesome! Your last visit was ${last}"`
         console.log(numVisits)
     }
     else{
-        message=`You last visited ${differenceDays} days ago.`
+        message=`You last visited us ${last}, ${differenceDays} days ago.`
         console.log(numVisits)
     }}
     visitsDisplay.textContent=message
