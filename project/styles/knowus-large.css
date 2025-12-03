@@ -1,0 +1,72 @@
+@media only screen and (min-width:38rem){
+    .hamburger{
+        display: none;
+    }
+    header{
+        grid-template-columns: 40px auto;
+    }
+    header, main, nav, footer{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    header img{
+        
+        height: 80px;
+        width: auto;
+    }
+    .navigation{
+        display: block;
+    }
+    .navigation ul{
+        padding-bottom: 15px;
+        padding-top: 15px;
+        display: flex;
+        background-color: var(--mint-color);
+        padding-left: 7px;
+        
+    }
+    .navigation a{
+        display: block;
+        width: 100%;
+        border: none;
+        font-family: var(--regular-text);
+        color: black;
+        font-weight: 200;
+        font-size: 1.3rem;
+
+        
+    }
+   h1{
+    font-size: 1.5rem;
+    padding-left: 2%;
+   }
+  .gym-pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.gym-pictures .card{
+    width: 100%;
+}
+@keyframes larger-images{
+    0%{
+        width: 220px;
+        height: auto;
+    }   
+    100%{
+        width: 300px;
+        height: auto;
+    }
+}
+.gym-pictures .card img{
+    width: 220px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+.gym-pictures .card img.animate {
+    animation: larger-images 0.6s ease forwards;
+}
+
+
+}

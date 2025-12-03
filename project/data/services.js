@@ -41,6 +41,25 @@ export const services=
         "Quiet and independent environment"
       ],
       "suitableFor": "Experienced gym users who prefer independence or already know what routine they want to follow."
+    },
+    {
+      "id": "glutes-core-sculpt",
+      "title": "Glutes & Core Sculpt",
+      "description": "A high-burn session focusing on glutes, legs, and deep core muscles using bands, weights, and bodyweight techniques. Designed to tone, strengthen, and build functional lower-body power.",
+      "timeAvailability": [
+      "Monday 18:00",
+      "Wednesday 19:30",
+      "Saturday 10:00"
+      ],
+      "price": "$16000",
+      "features": [
+        "Access to all machines and equipment",
+        "Printable or digital workout guides",
+        "Freedom to train anytime",
+        "Quiet and independent environment"
+      ],
+      "suitableFor": "Experienced gym users who prefer independence or already know what routine they want to follow."
     }
+
   ]
 

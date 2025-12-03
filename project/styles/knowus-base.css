@@ -50,9 +50,7 @@ header img{
     content: "\2630";
     font-size: 2.5rem;
     color:white;
-    background-color: black;
-    
-    
+    background-color: black;   
 }
 
 .hamburger.show::before{
@@ -109,40 +107,21 @@ h1{
     background-color: var(--gray-color);
     border-radius: 999px;
   padding: 0.75rem 1.7rem;
-    
 }
-.hero{
-    
-    position: relative;
-    margin-bottom: 15%;
+/******************GYM-PICTURES*******************/
+.gym-pictures{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
 }
-.hero img{
+.gym-pictures .card{
     width: 100%;
-  height: 100%;
-  object-fit: cover; /* MAGIC: fills container without distortion */
-  object-position: center; /* or top, bottom, 20% 50%, etc */
-  display: block;
-  border-radius: 1%;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    justify-items: center;
 }
-.hero p{
-    font-family: var(--regular-text);
-    font-weight: 600;
-    font-size: 3rem;
-    color: white;
-    position: absolute;
-    margin-left: 10%;
-    margin-top: -100%;
-    width: 400px;
+.gym-pictures .card img{
+    width: 220px;
     height: auto;
-    text-align: center;
 }
-.hero button{
-    position: absolute;
-    margin-left: 45%;
-    margin-top: -50%;
-}
-
 
 /******************FOOTER************************/
 footer{

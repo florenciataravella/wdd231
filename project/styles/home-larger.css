@@ -1,0 +1,94 @@
+@media only screen and (min-width:38rem){
+    .hamburger{
+        display: none;
+    }
+    header{
+        grid-template-columns: 40px auto;
+    }
+    header, main, nav, footer{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    header img{
+        
+        height: 80px;
+        width: auto;
+    }
+    .navigation{
+        display: block;
+    }
+    .navigation ul{
+        padding-bottom: 15px;
+        padding-top: 15px;
+        display: flex;
+        background-color: var(--mint-color);
+        padding-left: 7px;
+        
+    }
+    .navigation a{
+        display: block;
+        width: 100%;
+        border: none;
+        font-family: var(--regular-text);
+        color: black;
+        font-weight: 200;
+        font-size: 1.3rem;
+
+        
+    }
+   .hero img{
+        width: 100%;
+        height: auto;    
+   }
+   h1{
+    font-size: 1.5rem;
+    padding-left: 2%;
+   }
+   .hero p{
+    font-family: var(--regular-text);
+    font-weight: 600;
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -70%;
+    width: 800px;
+    height: auto;
+    text-align: center;
+}
+.hero button{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -30%;
+    background-color: var(--purple-color);           /* black button */
+  color: #fff;                      /* white text */
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--regular-text);
+  padding: 1rem 2rem;          /* comfy padding */
+  border: none;
+  border-radius: 999px;             /* pill shape */
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.25s ease;
+  box-shadow: 
+      0 4px 10px rgba(0,0,0,0.15),  /* soft outer shadow */
+      0 1px 2px rgba(0,0,0,0.10);   /* small crisp shadow */
+}
+}
+.icons {            /*section*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.icons div{
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  background-color: var(--mint-color);
+  border-radius: 7px;
+  padding: 10px 5px 10px 5px;
+}
+}
+.icons div p{
+
+}

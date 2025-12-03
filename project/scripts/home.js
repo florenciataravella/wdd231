@@ -1,5 +1,7 @@
-import { navigation } from "../../chamber/scripts/navigation.mjs";
-import { footer } from "../../chamber/scripts/footer.mjs";
+import { footer } from "./footer_navigation.mjs";
+import { navigation } from "./footer_navigation.mjs";
 
-import { services } from "../data/services";
+//import { services } from "../data/services";
 
+navigation();
+footer();

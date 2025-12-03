@@ -1,0 +1,312 @@
+:root{
+    --regular-text: "Inter", sans-serif;
+    --button-text:white;
+    --mint-color:#D4EBE8;
+    --beige-color:#F3EFE8;
+    --gray-color:#E5E7EB;
+    --purple-color:#9c57b5;
+    --light-purpleColor:#ebd8f3;
+
+}
+body{
+    margin-left: 1rem;
+    box-sizing: border-box;
+}
+main{
+     max-width: 1000px;
+     margin: 0;
+     
+}
+/********************HEADER*************************/
+header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 5px 0 10px;
+    column-gap: 8px;
+    align-items:center;
+    background-color: black;
+    box-sizing: border-box;
+}
+header img{
+    display: block;
+    height:auto;
+    width: 100%;
+}
+
+/**************HAMBURGER NAVIGATION*************************/
+.hamburger{
+    width: 50px;
+    height: 50px;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    cursor: pointer;
+    justify-self: end;
+
+  background: transparent; /*makes the content backgroud dessapear*/
+    
+}
+.hamburger::before{
+    content: "\2630";
+    font-size: 2.5rem;
+    color:white;
+    background-color: black;   
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+    font-size: 2.5rem;
+    color:white;
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+}
+/**************NAVIGATION*************************/
+.navigation{
+    display: none;
+
+   }
+.navigation.show{
+    display: block;
+    /*background-color: var(--mint-color);*/
+
+}
+.navigation ul{
+ list-style-type: none;
+ padding: 0%;
+ margin:0%;
+ /*background-color: var(--mint-color);*/
+ 
+}
+.navigation li.current{
+    background-color:white;
+    
+}
+.navigation a{
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem 10px;
+    font-family: var(--regular-text);
+    font-weight: 200;
+    color: black;
+    border: solid 2px white;
+}
+.navigation a:hover{
+    
+    border: solid 2px white;
+    border-radius: 15px;
+    color: black;
+    background-color: white;
+}
+h1{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 5%;
+    font-family: var(--regular-text);
+    font-size: 1rem;
+    background-color: var(--gray-color);
+    border-radius: 999px;
+  padding: 0.75rem 1.7rem;
+    
+}
+/**************INTEREST-CARDS*************************/
+.interest-cards div{
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;  /* pushes title up, button down */
+  align-items: center;
+   padding: 20px;
+  height: 70px; 
+}
+.interest-cards h4{
+    font-family: var(--regular-text);
+    color: var(--font-color);
+    text-align: center;
+    grid-row: 1;
+    margin: 0%;
+    font-weight: 200;
+    font-size: 1.8rem;
+}
+.interest-cards button {
+		width: 100px;
+        height: 30px;
+        font-size: 0.8rem;
+		font-weight: 600;
+        background-color: var(--purple-color);
+        font-family: var(--regular-text);
+        border:1px solid white;
+        color: white; 
+        box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+        
+        
+	}
+/******************FORM***********************/
+.classmain{
+
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     justify-items: center;
+    
+}
+.join-form{
+    margin: 2rem;
+    border: 1px solid var(--mint-color);
+    border-radius: 2px;
+    padding: 2rem;
+    font-family: var(--regular-text);
+
+}
+
+.join-form label{
+    display: block;
+    margin-bottom: .4rem;
+}
+.join-form input[type="text"],
+                [type="email"],
+                [type="tel"]
+{
+    display: block;
+    margin-bottom: .2rem;
+    background-color: var(--gray-color);
+    border: 1px solid var(--font-color) ;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    box-sizing: border-box;
+}
+.join-form input[type="text"]:focus-visible,
+                [type="email"]:focus-visible,
+                [type="tel"]:focus-visible,
+                [type="submit"]:focus-visible{  
+    outline: 2px solid #000;
+    outline-offset: 2px;
+   }
+.join-form fieldset label{
+  display: block;
+}
+.join-form fieldset{
+    padding-top: 1rem;
+}
+
+.join-form input[type="submit"]{
+    margin-top: 2rem;
+
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: var(--gray-color);
+    font-size: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(108, 99, 99, 0.5);
+    margin-left: 15%;
+
+    transition: background-color ease-in-out;
+}
+.join-form #interests{
+    width: 100%;
+    max-width: 400px;
+}
+p{
+    font-family: var(--regular-text);
+    font-weight:200;
+    font-size: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 100%;            
+ }
+p.name{
+    font-family: var(--regular-text);
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+}
+/******************ANIMATION************************/
+@keyframes boxes {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.interest-cards div:hover{
+    animation: boxes 0.5s ease;
+}
+.join-form input[type="submit"]:hover{
+background-color: var(--purple-color);
+}
+/******************FOOTER************************/
+footer{
+    
+    padding: 1rem 10px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    background-color: black;
+}
+.social{
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+}
+footer img{
+    width:22px;
+    height: 22px;
+}
+.social a{
+
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a:hover{
+    border: solid 1px var(--normal-color);
+    background-color:var(--purple-color);
+    border-radius: 24px;
+}
+footer p{
+    font-family: var(--regular-text);
+    font-weight: 200;
+    color: white;
+}
+/******************THANKYOU************************/
+#thankyou{
+    width: 400px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  padding: 20px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+#thankyou p{
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .interest-cards{
+        justify-items: center;
+    }
+}
+
+
