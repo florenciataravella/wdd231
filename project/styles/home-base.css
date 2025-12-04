@@ -81,7 +81,7 @@ header img{
  
 }
 .navigation li.current{
-    background-color:#e7f3e8 ;
+    background-color:white;
 }
 .navigation a{
     box-sizing: border-box;
@@ -100,6 +100,7 @@ header img{
     color: black;
     background-color: white;
 }
+/**************HERO*************************/
 h1{
     padding-top: 5%;
     padding-bottom: 5%;
@@ -108,7 +109,8 @@ h1{
     font-size: 1rem;
     background-color: var(--gray-color);
     border-radius: 999px;
-  padding: 0.75rem 1.7rem;
+    padding: 0.75rem 1.7rem;
+  cursor: pointer;
     
 }
 .hero{
@@ -123,7 +125,7 @@ h1{
   object-position: center; /* or top, bottom, 20% 50%, etc */
   display: block;
   border-radius: 1%;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  /*box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);*/
 }
 .hero p{
     font-family: var(--regular-text);
@@ -137,12 +139,29 @@ h1{
     height: auto;
     text-align: center;
 }
+.rainbow-text {
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    #FFB3BA, /* pastel pink */
+    #FFDFBA, /* pastel peach */
+    #FFFFBA, /* pastel yellow */
+    #BAFFC9, /* pastel mint */
+    #BAE1FF, /* pastel blue */
+    #D7BAFF  /* pastel lavender */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .hero button{
     position: absolute;
     margin-left: 45%;
     margin-top: -50%;
 }
-
+.hero .icons p{
+    font-size: 1rem;
+}
 
 /******************FOOTER************************/
 footer{
