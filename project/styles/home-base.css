@@ -113,8 +113,31 @@ h1{
   cursor: pointer;
     
 }
-.hero{
-    
+.hero button{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -30%;
+    background-color: var(--purple-color);           
+  color: #fff;                      
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--regular-text);
+  padding: 1rem 2rem;          
+  border: none;
+  border-radius: 999px;             
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.25s ease;
+  box-shadow: 
+      0 4px 10px rgba(0,0,0,0.15),  /* soft outer shadow */
+      0 1px 2px rgba(0,0,0,0.10);   /* small crisp shadow */
+}
+.hero button:hover{
+    background-color: var(--mint-color);
+    color: var(--purple-color);
+}
+
+.hero{ 
     position: relative;
     margin-bottom: 15%;
 }
@@ -159,8 +182,10 @@ h1{
     margin-left: 45%;
     margin-top: -50%;
 }
-.hero .icons p{
-    font-size: 1rem;
+@media (max-width:38rem){
+.hero .icons{
+display: none;
+}
 }
 
 /******************FOOTER************************/
