@@ -19,8 +19,9 @@ footer();
     try{
         const response=await fetch(url);
         const data=await response.json();
-        console.log(data.features)
-       // return data.features;    //array js
+
+console.log(data.features)
+       //return data.features;    //array js
 
     }
     catch(error){
@@ -132,3 +133,8 @@ function displayGymPictures(members){
     displayItems(details);
 }
 init();*/
+async function init(){
+    getPicturesInfo()
+    
+}
+init();
