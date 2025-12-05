@@ -20,8 +20,7 @@ footer();
         const response=await fetch(url);
         const data=await response.json();
 
-console.log(data.features)
-       //return data.features;    //array js
+       return data.features;    //array js
 
     }
     catch(error){
@@ -73,68 +72,15 @@ console.log(data.features)
     });
         
     }
-/*displayItems(images);
 
-
-function displayGymPictures(members){
-    let goldSilverMembers=members.filter(m=>m.membership==="silver"||m.membership==="gold");
-    
-    
-
-    for(let i=0; i<3; i++){ 
-        let randomN=goldSilverMembers.length;
-    let randonNN=Math.floor(Math.random()*randomN);
-    
-    console.log(randomN);
-    console.log(randonNN)
-    
         
-        let card=document.createElement("section");
-        let name=document.createElement("p");
-        let address=document.createElement("p");
-        let phone=document.createElement("p");
-        let weburl=document.createElement("p");
-        let mship=document.createElement("p");
-        let portrait=document.createElement("img");
-        
-        name.textContent=goldSilverMembers[randonNN].name;
-
-        address.textContent=goldSilverMembers[randonNN].address;
-        phone.textContent=goldSilverMembers[randonNN].phone;
-        weburl.textContent=goldSilverMembers[randonNN].weburl;
-        mship.textContent=goldSilverMembers[randonNN].membership;
-        portrait.setAttribute("src",goldSilverMembers[randonNN].image);
-        portrait.setAttribute("alt",`Logo of ${goldSilverMembers[randonNN].name}`);
-        portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width","150");
-        portrait.setAttribute("height","150");
-        portrait.setAttribute("loading","lazy");
-
-        card.appendChild(name);
-        name.classList.add("name");
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(weburl);
-        weburl.classList.add("web");
-        card.appendChild(mship);
-        card.appendChild(portrait);
-        portrait.classList.add("portrait");
-
-
-        card.classList.add("cards");
-        spotlightMembers.appendChild(card);
-        goldSilverMembers.splice(randonNN, 1);
-        
-    }
-      }*/
-        
-/*async function init(){
+async function init(){
     const details=await getPicturesInfo();
     displayItems(details);
 }
-init();*/
-async function init(){
+init();
+/*async function init(){
     getPicturesInfo()
     
 }
-init();
+init();*/
