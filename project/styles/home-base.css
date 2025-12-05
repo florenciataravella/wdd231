@@ -113,6 +113,42 @@ h1{
   cursor: pointer;
     
 }
+.discover-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem 2rem;
+  border-radius: 500px;                 /* pill shape */
+
+  background: #f3f4f8;                  /* soft light background */
+  color: var(--purple-color);           /* your purple */
+  font-family: var(--regular-text);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.15s ease;
+}
+
+/* Hover / focus */
+.discover-btn:hover,
+.discover-btn:focus-visible {
+  background: linear-gradient(90deg, #FFEAF6, #E4F4FF, #E4FFF5); /* pastel gradient */
+  color: #3c2a4f;                             /* slightly darker purple */
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+  transform: translateY(-1px);
+  outline: none;
+}
+
 .hero button{
     position: absolute;
     margin-left: 45%;

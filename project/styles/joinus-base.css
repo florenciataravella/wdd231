@@ -32,7 +32,9 @@ header img{
     height:auto;
     width: 100%;
 }
-
+.navigation li.current{
+    background-color:white;
+}
 /**************HAMBURGER NAVIGATION*************************/
 .hamburger{
     width: 50px;
@@ -153,7 +155,7 @@ h1{
 .classmain{
 
      display: grid;
-     grid-template-columns: 1fr 1fr;
+     grid-template-columns: 1fr;
      justify-items: center;
     
 }

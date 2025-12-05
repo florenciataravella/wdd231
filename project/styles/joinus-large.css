@@ -35,7 +35,13 @@
         font-size: 1.3rem;
         
     }
-   
+   .classmain{
+
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     justify-items: center;
+    
+}
    }
    h1{
     font-size: 1.5rem;

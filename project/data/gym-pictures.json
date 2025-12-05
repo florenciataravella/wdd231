@@ -1,0 +1,124 @@
+{
+    "gym-features":[
+  {
+    "id": "gym-1",
+    "title": "Free Weights Area",
+    "description": "Dumbbells, benches, and racks for strength training.",
+    "category": "Strength",
+    "difficulty": "moderate",
+    "src": "images/gym-1.webp"
+  },
+  {
+    "id": "gym-2",
+    "title": "Cardio Zone",
+    "description": "Treadmills and ellipticals for high-intensity cardiovascular workouts.",
+    "category": "Cardio",
+    "difficulty": "intense",
+    "src": "images/gym-2.webp"
+  },
+  {
+    "id": "gym-3",
+    "title": "Functional Training",
+    "description": "Kettlebells, TRX, and plyometric equipment for versatile routines.",
+    "category": "Functional",
+    "difficulty": "intense",
+    "src": "images/gym-3.webp"
+  },
+  {
+    "id": "gym-4",
+    "title": "Squat Racks",
+    "description": "Space for barbell squats, presses, and heavy compound lifts.",
+    "category": "Strength",
+    "difficulty": "intense",
+    "src": "images/gym-4.webp"
+  },
+  {
+    "id": "gym-5",
+    "title": "Machine Circuit",
+    "description": "Isolated machines ideal for beginners or focused muscle work.",
+    "category": "Equipment",
+    "difficulty": "easy",
+    "src": "images/gym-5.webp"
+  },
+  {
+    "id": "gym-6",
+    "title": "Stretching Area",
+    "description": "Comfortable mats and tools for flexibility and mobility.",
+    "category": "Wellness",
+    "difficulty": "easy",
+    "src": "images/gym-6.webp"
+  },
+  {
+    "id": "gym-7",
+    "title": "Spinning Room",
+    "description": "Energetic cycling classes with upbeat music and instructors.",
+    "category": "Classes",
+    "difficulty": "intense",
+    "src": "images/gym-7.webp"
+  },
+  {
+    "id": "gym-8",
+    "title": "Boxing Zone",
+    "description": "Punching bags and gloves for high-energy boxing sessions.",
+    "category": "Functional",
+    "difficulty": "intense",
+    "src": "images/gym-8.webp"
+  },
+  {
+    "id": "gym-9",
+    "title": "Pilates Studio",
+    "description": "Reformer machines and mats for core strength and posture.",
+    "category": "Wellness",
+    "difficulty": "moderate",
+    "src": "images/gym-9.webp"
+  },
+  {
+    "id": "gym-10",
+    "title": "CrossFit Rig",
+    "description": "Bars, rings, and rigs tailored for advanced CrossFit routines.",
+    "category": "Functional",
+    "difficulty": "intense",
+    "src": "images/gym-10.webp"
+  },
+  {
+    "id": "gym-11",
+    "title": "Locker Rooms",
+    "description": "Clean changing rooms equipped with showers and amenities.",
+    "category": "Facilities",
+    "difficulty": "easy",
+    "src": "images/gym-11.webp"
+  },
+  {
+    "id": "gym-12",
+    "title": "Reception Area",
+    "description": "Staff available for check-in, assistance, and memberships.",
+    "category": "Facilities",
+    "difficulty": "easy",
+    "src": "images/gym-12.webp"
+  },
+  {
+    "id": "gym-13",
+    "title": "Hydration Station",
+    "description": "Water fountain and supplement bar to keep you energized.",
+    "category": "Facilities",
+    "difficulty": "easy",
+    "src": "images/gym-13.webp"
+  },
+  {
+    "id": "gym-14",
+    "title": "Personal Training Desk",
+    "description": "Meet professional trainers for personalized fitness plans.",
+    "category": "Services",
+    "difficulty": "moderate",
+    "src": "images/gym-14.webp"
+  },
+  {
+    "id": "gym-15",
+    "title": "Yoga Room",
+    "description": "Calming environment for yoga, stretching, and mindfulness.",
+    "category": "Wellness",
+    "difficulty": "easy",
+    "src": "images/gym-15.webp"
+  }
+]
+}
