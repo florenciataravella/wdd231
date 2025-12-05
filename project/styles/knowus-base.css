@@ -80,6 +80,7 @@ header img{
 }
 .navigation li.current{
     background-color:#e7f3e8 ;
+    border: 0.5px solid ;
 }
 .navigation a{
     box-sizing: border-box;
@@ -98,17 +99,29 @@ header img{
     color: black;
     background-color: white;
 }
-h1{
+.heading{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    font-family: var(--regular-text);
     padding-top: 5%;
     padding-bottom: 5%;
-    margin: 5%;
-    font-family: var(--regular-text);
-    font-size: 1rem;
+    margin: 0;
+    font-size: 0.7rem;
     background-color: var(--gray-color);
-    border-radius: 999px;
-  padding: 0.75rem 1.7rem;
+    padding: 0.75rem 1.7rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+h1{
+    grid-column: 1/2;
+    
+}
+.heading p{
+    grid-column: 2/3;
+    font-size: 0.5rem;
 }
 /******************GYM-PICTURES*******************/
+
 .gym-pictures{
     display: grid;
     grid-template-columns: 1fr;
@@ -122,6 +135,11 @@ h1{
     width: 220px;
     height: auto;
 }
+.gym-pictures .card p{
+    font-family: var(--regular-text);
+    font-weight: 200;
+}
+
 
 /******************FOOTER************************/
 footer{

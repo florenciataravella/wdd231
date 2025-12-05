@@ -101,8 +101,9 @@ footer();
   });
 }
 
-/*
-const visitsDisplay=document.querySelector("#numVisits")
+
+    }
+    const visitsDisplay=document.querySelector("#numVisits")
 const msToDays=86400000
 let storedValue=localStorage.getItem("numVisits-ls");
 let lastVisit=localStorage.getItem("lastVisit")
@@ -137,8 +138,8 @@ else{
     numVisits++;
     localStorage.setItem("numVisits-ls", numVisits)
     localStorage.setItem("lastVisit", now.toISOString());
-*/
-}
+
+
         
 
 /*async function init(){

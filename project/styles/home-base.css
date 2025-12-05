@@ -81,7 +81,9 @@ header img{
  
 }
 .navigation li.current{
-    background-color:white;
+  background-color:#e7f3e8 ;
+    border: 0.5px solid ;
+
 }
 .navigation a{
     box-sizing: border-box;
@@ -118,7 +120,7 @@ h1{
   align-items: center;
   justify-content: center;
 
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 500px;                 /* pill shape */
 
   background: #f3f4f8;                  /* soft light background */
@@ -132,11 +134,6 @@ h1{
   border: 1px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 
-  transition:
-    background 0.25s ease,
-    color 0.25s ease,
-    box-shadow 0.25s ease,
-    transform 0.15s ease;
 }
 
 /* Hover / focus */

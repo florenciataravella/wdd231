@@ -102,20 +102,8 @@
   cursor: pointer;
 }
 .hero .icons p:hover{
-    animation: textShades 0.6s ease forwards;
+    color: var(--purple-color);
   cursor: pointer;
-}
-@keyframes textShades{
-    0% {
-    color: white;
-    background: none;
-  }
-  100% {
-    color: transparent;
-    background: linear-gradient(90deg, #f8c8dc, #c7dfff, #b4f4d9);
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
 }
 
 #sg{

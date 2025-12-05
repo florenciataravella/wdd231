@@ -81,7 +81,8 @@ header img{
  
 }
 .navigation li.current{
-    background-color:white;
+    background-color:#e7f3e8 ;
+    border: 0.5px solid ;
     
 }
 .navigation a{

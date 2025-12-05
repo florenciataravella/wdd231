@@ -1,4 +1,13 @@
-@media only screen and (min-width:38rem){
+@media (min-width:41rem)
+{
+    .gym-pictures{
+
+    grid-template-columns: 1fr 1fr;
+
+}
+}
+
+@media only screen and (min-width:50rem){
     .hamburger{
         display: none;
     }
@@ -39,6 +48,9 @@
    h1{
     font-size: 1.5rem;
     padding-left: 2%;
+   }
+   .heading{
+    font-size: 1rem;
    }
   .gym-pictures{
     display: grid;
