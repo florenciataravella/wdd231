@@ -127,8 +127,8 @@ function displayGymPictures(members){
     }
       }*/
         
-async function init(){
+/*async function init(){
     const details=await getPicturesInfo();
     displayItems(details);
 }
-init();
+init();*/
