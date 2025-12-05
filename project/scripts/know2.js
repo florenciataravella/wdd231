@@ -65,20 +65,82 @@ footer();
         divp.appendChild(div)
 
         photo.addEventListener("click", ()=>{
-            photo.classList.toggle("animate");
+            showMore(x)
+        
+    
+            
         });
         
        
     });
         
     }
-
-        
-async function init(){
+    async function init(){
     const details=await getPicturesInfo();
     displayItems(details);
+
+    }
+    init();
+
+
+    function showMore(item){
+    
+{
+     myD.showModal()
+    
+    myD.innerHTML=`
+    <button id="closeDialog">❌</button>
+    <h2> ${item.title} </h2>
+    <p> ${item.description}</p>
+    <p> ${item.difficulty}</p>
+    <p><p> ${item.category}</p>
+    `
+   const closeD=document.querySelector("#closeDialog")
+    closeD.addEventListener("click", () => {
+    myD.close();
+  });
 }
-init();
+
+/*
+const visitsDisplay=document.querySelector("#numVisits")
+const msToDays=86400000
+let storedValue=localStorage.getItem("numVisits-ls");
+let lastVisit=localStorage.getItem("lastVisit")
+let numVisits;
+
+if (storedValue===null){
+    numVisits=0
+}
+else {numVisits=Number(storedValue)
+}
+
+const now=new Date();
+let message=""
+
+if(lastVisit===null){
+    message="This is your first visit"
+}
+else{
+    const last=new Date(lastVisit)
+    const differenceMs=now-last
+    const differenceDays=Math.floor(differenceMs/msToDays)
+
+    if (differenceMs<msToDays){
+        message=`"Back so soon! Awesome! Your last visit was ${last}"`
+        console.log(numVisits)
+    }
+    else{
+        message=`You last visited us ${last}, ${differenceDays} days ago.`
+        console.log(numVisits)
+    }}
+    visitsDisplay.textContent=message
+    numVisits++;
+    localStorage.setItem("numVisits-ls", numVisits)
+    localStorage.setItem("lastVisit", now.toISOString());
+*/
+}
+        
+
 /*async function init(){
     getPicturesInfo()
     
