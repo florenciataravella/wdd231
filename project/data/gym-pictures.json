@@ -1,12 +1,12 @@
 {
-    "gym-features":[
+    "features":[
   {
     "id": "gym-1",
     "title": "Free Weights Area",
     "description": "Dumbbells, benches, and racks for strength training.",
     "category": "Strength",
     "difficulty": "moderate",
-    "src": "images/gym-1.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-2",
@@ -14,7 +14,7 @@
     "description": "Treadmills and ellipticals for high-intensity cardiovascular workouts.",
     "category": "Cardio",
     "difficulty": "intense",
-    "src": "images/gym-2.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-2.svg"
   },
   {
     "id": "gym-3",
@@ -22,7 +22,7 @@
     "description": "Kettlebells, TRX, and plyometric equipment for versatile routines.",
     "category": "Functional",
     "difficulty": "intense",
-    "src": "images/gym-3.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-4",
@@ -30,7 +30,7 @@
     "description": "Space for barbell squats, presses, and heavy compound lifts.",
     "category": "Strength",
     "difficulty": "intense",
-    "src": "images/gym-4.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-5",
@@ -38,7 +38,7 @@
     "description": "Isolated machines ideal for beginners or focused muscle work.",
     "category": "Equipment",
     "difficulty": "easy",
-    "src": "images/gym-5.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-6",
@@ -46,7 +46,7 @@
     "description": "Comfortable mats and tools for flexibility and mobility.",
     "category": "Wellness",
     "difficulty": "easy",
-    "src": "images/gym-6.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-7",
@@ -54,7 +54,7 @@
     "description": "Energetic cycling classes with upbeat music and instructors.",
     "category": "Classes",
     "difficulty": "intense",
-    "src": "images/gym-7.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-8",
@@ -62,7 +62,7 @@
     "description": "Punching bags and gloves for high-energy boxing sessions.",
     "category": "Functional",
     "difficulty": "intense",
-    "src": "images/gym-8.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-9",
@@ -70,7 +70,7 @@
     "description": "Reformer machines and mats for core strength and posture.",
     "category": "Wellness",
     "difficulty": "moderate",
-    "src": "images/gym-9.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-10",
@@ -78,7 +78,7 @@
     "description": "Bars, rings, and rigs tailored for advanced CrossFit routines.",
     "category": "Functional",
     "difficulty": "intense",
-    "src": "images/gym-10.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-11",
@@ -86,7 +86,7 @@
     "description": "Clean changing rooms equipped with showers and amenities.",
     "category": "Facilities",
     "difficulty": "easy",
-    "src": "images/gym-11.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-12",
@@ -94,7 +94,7 @@
     "description": "Staff available for check-in, assistance, and memberships.",
     "category": "Facilities",
     "difficulty": "easy",
-    "src": "images/gym-12.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-13",
@@ -102,7 +102,7 @@
     "description": "Water fountain and supplement bar to keep you energized.",
     "category": "Facilities",
     "difficulty": "easy",
-    "src": "images/gym-13.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-14",
@@ -110,7 +110,7 @@
     "description": "Meet professional trainers for personalized fitness plans.",
     "category": "Services",
     "difficulty": "moderate",
-    "src": "images/gym-14.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   },
   {
     "id": "gym-15",
@@ -118,7 +118,7 @@
     "description": "Calming environment for yoga, stretching, and mindfulness.",
     "category": "Wellness",
     "difficulty": "easy",
-    "src": "images/gym-15.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-1.svg"
   }
 ]
 }
