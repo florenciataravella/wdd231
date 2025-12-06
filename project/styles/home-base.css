@@ -120,11 +120,10 @@ h1{
   align-items: center;
   justify-content: center;
 
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 500px;                 /* pill shape */
-
+    color: black;
   background: #f3f4f8;                  /* soft light background */
-  color: var(--purple-color);           /* your purple */
   font-family: var(--regular-text);
   font-size: 1.1rem;
   font-weight: 600;
