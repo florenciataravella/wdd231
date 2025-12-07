@@ -70,7 +70,7 @@
     "description": "Reformer machines and mats for core strength and posture.",
     "category": "Wellness",
     "difficulty": "moderate",
-    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-8.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-9.webp"
   },
   {
     "id": "gym-10",
@@ -78,7 +78,7 @@
     "description": "Bars, rings, and rigs tailored for advanced CrossFit routines.",
     "category": "Functional",
     "difficulty": "intense",
-    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-8.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-10.webp"
   },
   {
     "id": "gym-11",
@@ -86,7 +86,7 @@
     "description": "Clean changing rooms equipped with showers and amenities.",
     "category": "Facilities",
     "difficulty": "easy",
-    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-8.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-11.webp"
   },
   {
     "id": "gym-12",
@@ -94,7 +94,7 @@
     "description": "Staff available for check-in, assistance, and memberships.",
     "category": "Facilities",
     "difficulty": "easy",
-    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-8.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-12.webp"
   },
   {
     "id": "gym-13",
@@ -102,7 +102,7 @@
     "description": "Water fountain and supplement bar to keep you energized.",
     "category": "Facilities",
     "difficulty": "easy",
-    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-8.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-13.webp"
   },
   {
     "id": "gym-14",
@@ -110,7 +110,7 @@
     "description": "Meet professional trainers for personalized fitness plans.",
     "category": "Services",
     "difficulty": "moderate",
-    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-8.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-14.webp"
   },
   {
     "id": "gym-15",
@@ -118,7 +118,7 @@
     "description": "Calming environment for yoga, stretching, and mindfulness.",
     "category": "Wellness",
     "difficulty": "easy",
-    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-8.webp"
+    "src": "https://florenciataravella.github.io/wdd231/project/images/gym-15.webp"
   }
 ]
 }

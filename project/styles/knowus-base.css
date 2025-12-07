@@ -132,8 +132,8 @@ h1{
     justify-items: center;
 }
 .gym-pictures .card img{
-    width: 220px;
-    height: auto;
+    width: 263px;
+    height: 350px;
 }
 .gym-pictures .card p{
     font-family: var(--regular-text);
